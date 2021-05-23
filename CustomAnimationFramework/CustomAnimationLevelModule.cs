@@ -42,7 +42,6 @@ namespace CustomAnimationFramework
             // ReSharper disable once InconsistentNaming
             private static IEnumerator ChangeAnimation(Equipment __instance, ContainerData.Content content)
             {
-                yield return new WaitForSeconds(1);
                 var itemData = content.itemData;
                 if (itemData == null)
                     yield break;
@@ -73,9 +72,9 @@ namespace CustomAnimationFramework
                             animatorOverrideController[currentAnimation.Key] = avatarAnimator.runtimeAnimatorController.animationClips.First(
                                 clip => clip.name == currentAnimation.Value);
                         }
-                        catch (Exception)
+                        catch (Exception exception)
                         {
-                            //ignored
+                            Debug.Log(exception.Message);
                         }
                     }
 
