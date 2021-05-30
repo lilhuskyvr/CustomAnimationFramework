@@ -8,6 +8,10 @@ Source of animations:
 1. Unity Assets Store: https://assetstore.unity.com/?q=mecanim%20animation&orderBy=1
 2. Mixamo: https://www.mixamo.com
 
+Tutorials:
+1. Mod Making using Custom Animation Framework from A to Z: https://www.youtube.com/watch?v=jl7zU4Joy4I
+2. Convert Mixamo Animation To B&S Animations: https://www.youtube.com/watch?v=ROKGgSNc4Sk
+
 Commands: 
 
 1. Spawn a test creature
