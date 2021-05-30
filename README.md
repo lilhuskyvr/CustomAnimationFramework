@@ -1,6 +1,9 @@
 Custom Animation Framework
 ---
 
+Sample Project: 
+https://github.com/lilhuskyvr/WristBladeFighters
+
 Commands: 
 
 1. Spawn a test creature
