@@ -30,12 +30,13 @@ namespace CustomAnimationFramework
             if (_creature.state != Creature.State.Alive)
                 return;
 
+            if (Time.timeScale == 0)
+                return;
+
             try
             {
-                
                 for (int i = 0; i < _creature.animator.layerCount; i++)
                 {
-                 
                     foreach (var animatorClipInfo in _creature.animator.GetCurrentAnimatorClipInfo(i))
                     {
                         Debug.Log(animatorClipInfo.clip.name);

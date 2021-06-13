@@ -55,6 +55,7 @@ namespace CustomAnimationFramework
 
                 Catalog.GetData<ItemData>(itemModuleAnimation.animationContainerItemId).SpawnAsync(item =>
                 {
+                    item.disallowDespawn = true;
                     AnimatorOverrideController animatorOverrideController =
                         new AnimatorOverrideController(creature.animator.runtimeAnimatorController);
 
@@ -69,8 +70,9 @@ namespace CustomAnimationFramework
                                 continue;
                             var currentAnimation = animation;
 
-                            animatorOverrideController[currentAnimation.Key] = avatarAnimator.runtimeAnimatorController.animationClips.First(
-                                clip => clip.name == currentAnimation.Value);
+                            animatorOverrideController[currentAnimation.Key] =
+                                avatarAnimator.runtimeAnimatorController.animationClips.First(
+                                    clip => clip.name == currentAnimation.Value);
                         }
                         catch (Exception exception)
                         {
